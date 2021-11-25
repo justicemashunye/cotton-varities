@@ -29,7 +29,7 @@
                                         <td>{{ $variety->id }}</td>
                                         <td>{{ $variety->name }}</td>
                                         <td>{{ $variety->slug }}</td>
-                                        <td>{{ $variety->image }}</td>
+                                        <td><img class="rounded" src="{{ asset('storage/'.$variety->image) }}" alt="{{<?php echo $variety->name;?>}}" style="width: 150px; height: auto;" ></td>
                                         <td class="text-center">
                                             <div class="btn-group" role="group" aria-label="Second group">
                                                 <a href="{{ route('admin.varieties.edit', $variety->id) }}" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>

@@ -21,5 +21,4 @@ class VarietyController extends Controller
         return view('site.pages.variety', compact('variety'));
     }
 
-
 }

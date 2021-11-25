@@ -7,8 +7,8 @@
         <div class="collapse navbar-collapse" id="main_nav">
             <ul class="navbar-nav">
                 @forelse ($varieties as $variety)
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('variety.show', $variety->slug) }}">{{ $variety->name }}</a>
+                    <li class="nav-item" style="margin-left:10px;margin-right:15px;">
+                        <a class="nav-link" href="{{ route('variety.show', $variety->slug) }}" style="font-size:15px;">{{ $variety->name }}</a>
                     </li>
                 @empty
                   <div>

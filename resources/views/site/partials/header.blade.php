@@ -14,15 +14,6 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 ml-1 justify-content-end">
                     <div class="widgets-wrap d-flex justify-content-end">
-                    <div class="widget-header">
-                            <a href="#" class="icontext">
-                                <div class="icon-wrap icon-xs bg2 round text-secondary"><i
-                                        class="fa fa-shopping-cart"></i></div>
-                                <div class="text-wrap">
-                                    <small>small</small>
-                                </div>
-                            </a>
-                    </div>
                         @guest
                             <div class="widget-header">
                                 <a href="{{ route('login') }}" class="ml-3 icontext">

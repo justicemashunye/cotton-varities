@@ -14,5 +14,9 @@ class ViewComposerServiceProvider extends ServiceProvider
         View::composer('site.partials.nav', function ($view) {
             $view->with('varieties', Variety::orderByRaw('-name ASC')->get());
         });
+
+        View::composer('site.pages.homepage', function ($view) {
+            $view->with('varieties', Variety::orderByRaw('-name ASC')->get());
+        });
     }
 }

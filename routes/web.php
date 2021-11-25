@@ -12,6 +12,7 @@ Auth::routes();
 Route::view('/', 'site.pages.homepage');
 
 Route::group(['middleware' => ['auth:admin']], function () {
-    Route::get('/variety/{slug}', 'Site\VarietyController@show')->name('variety.show');
-
+    
 });
+Route::get('/variety/{slug}', 'Site\VarietyController@show')->name('variety.show');
+Route::get('/attributevalue/{id}', 'Site\AttributeValueController@show')->name('site.attributevalue.show');
